@@ -4,13 +4,9 @@ package top.greatxiaozou.proxy.simpleProxy;
  * 代理类，静态代理的核心类
  */
 public class Proxy implements Subject {
-    //组合一个真实对象
-    private RealSubject realSubject;
+    //创建一个真实对象
+    private RealSubject realSubject = new RealSubject();
 
-    //通过构造函数注入真实对象（需要被代理的对象）
-    public Proxy(RealSubject realSubject) {
-        this.realSubject = realSubject;
-    }
 
     //代理方法
     public void request() {
