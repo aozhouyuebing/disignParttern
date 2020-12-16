@@ -11,7 +11,7 @@ public abstract class Mediator {
         return c1;
     }
 
-    public ConcreteColleaguel getC2(){
+    public ConcreteColleague2 getC2(){
         return c2;
     }
     //中介者的业务逻辑
